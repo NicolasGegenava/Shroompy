@@ -1,0 +1,40 @@
+.terminal {
+  background-color: #000000;
+  color: #ff5555;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 50px auto;
+
+}
+
+.terminal-line {
+  font-size: 20px;
+  line-height: 25px;
+  box-sizing: border-box;
+  text-align:left;
+  
+  font-family: monospace;
+  font-weight: 700;  
+  
+  color: #d81f34;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .terminal{
+    min-height: 100vh;
+  }
+}

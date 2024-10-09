@@ -1,0 +1,81 @@
+.contactwrap {
+    padding-bottom: 50px;
+}
+
+.developers {
+    font-family: "Dela Gothic One", sans-serif;
+    color: white;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.person-card {
+    background-color: #000000;
+    transition: all .2s ease-in-out;
+    margin-right: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card:hover {
+    transform: scale(1.05);
+}
+
+.person-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person-name {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.person-name img {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+.person-description {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .person-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .person-card {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .contactwrap{
+        margin-top: 20%;
+    }
+}

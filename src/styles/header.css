@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  
+body {
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  background-color:black;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+
+.headerlogo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+  width: auto;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.headnav {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headnav a {
+  font-family: 'oswald';
+  font-size: 19px;
+  color: #f0f0f0;
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 5px 7px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.headnav a:hover {
+  color: #d81f34;
+}
+
+.pages::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.headnav a:hover::after,
+.headnav a.active::after {
+  width: calc(100% - 20px);
+  background-color: #d81f34;
+}
+
+.headnav a.active {
+  color: #d81f34;
+}
+
+@media (max-width: 600px) {
+  header {
+      margin-top: 4%;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .headnav{
+    flex-direction: row;
+    margin-left: 5px;
+  }
+
+  .logo{
+    margin-left: -10px;
+  }
+}

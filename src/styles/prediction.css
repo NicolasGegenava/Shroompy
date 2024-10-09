@@ -1,0 +1,55 @@
+.wrap{
+    margin-top: 2%;
+    padding-bottom: 50px;
+}
+
+.prediction{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Oswald";
+  }
+  
+  .wikiembed {
+    margin-top: 2%;
+    margin-left: 25%;
+    transition: all .3s ease-in-out;
+    width: 50%;
+    height: 400px;
+  }
+  
+  .wikiembed:hover{
+    transform: scale(1.05)
+  }
+  
+  .linkidentificator {
+    display: block;
+    margin-top: 2%;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    text-align: center; 
+    font-size: 18px;
+    font-family: "Roboto Condensed";
+    color: #ffffff; 
+  }
+  
+  .linkidentificator:hover{
+    color: #ff001e;
+  }
+
+  @media (max-width: 768px) {
+    .prediction {
+        margin-top: 15%;
+        font-size: 24px;
+    }
+
+    .wikiembed {
+        margin-left: 10%;
+        height: 200px;
+        width: 80%;
+    }
+
+    .linkidentificator {
+        font-size: 16px;
+    }
+}
